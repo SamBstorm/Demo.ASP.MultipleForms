@@ -1,0 +1,17 @@
+﻿@model Demo.ASP.MultipleForms.Models.Item
+
+<tr>
+
+    <td>
+        @Html.DisplayFor(model => model.Name)
+    </td>
+
+
+    <td>
+        @Html.DisplayFor(model => model.IsValid)
+    </td>
+
+    <td>
+        @Html.ActionLink("Toggle", "Toggle", new { Id = Model.Id})
+    </td>
+</tr>
